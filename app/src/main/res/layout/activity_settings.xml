@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context="com.goggmago.DogeFreeMaker.SettingsActivity">
+
+    <Button
+        android:id="@+id/BackBtn"
+        android:text="@string/Back"
+        android:onClick="BackFromSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/circle"
+        />
+
+    <TextView
+        android:id="@+id/YourEthAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/Your_Adress"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BackBtn" />
+
+    <EditText
+        android:id="@+id/Adress"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:labelFor="@id/Adress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YourEthAdress" />
+
+    <Button
+        android:id="@+id/SaveBtn"
+        android:onClick="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Save"
+        app:layout_constraintTop_toBottomOf="@id/Adress"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/circle"
+        />
+
+    <TextView
+        android:id="@+id/SetMes"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Your_Money"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SaveBtn" />
+
+    <TextView
+        android:id="@+id/InterfaceLang"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/Choose_Int_Lang"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SetMes" />
+
+    <Spinner
+        android:id="@+id/Language"
+        android:layout_width="231dp"
+        android:layout_height="70dp"
+        android:entries="@array/Language"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InterfaceLang">
+
+    </Spinner>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/AdSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/adUnitId"
+        />
+
+</android.support.constraint.ConstraintLayout>

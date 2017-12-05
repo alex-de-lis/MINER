@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/settings"
+        android:title="@string/Settings"
+        />
+    <item
+        android:id="@+id/share"
+        android:title="@string/Share"
+        />
+    <item
+        android:id="@+id/CheckBalance"
+        android:title="@string/Check_Balance"
+        />
+    <item
+        android:id="@+id/ExtRate"
+        android:title="@string/Exchange_Rates"
+        />
+</menu>

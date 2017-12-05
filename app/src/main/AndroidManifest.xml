@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goggmago.DogeFreeMaker">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon1"
+        android:label=""
+        android:roundIcon="@mipmap/ic_icon1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.goggmago.DogeFreeMaker.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.goggmago.DogeFreeMaker.MainScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.goggmago.DogeFreeMaker.CheckBalanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.goggmago.DogeFreeMaker.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.goggmago.DogeFreeMaker.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.goggmago.DogeFreeMaker.ExRate" />
+        <activity android:name="com.goggmago.DogeFreeMaker.Your_rate"></activity>
+    </application>
+
+</manifest>
